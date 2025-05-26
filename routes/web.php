@@ -19,4 +19,4 @@ Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/excel', [ExcelController::class, 'index'])->name('excel');
 
 Route::post('/excel/import', [ExcelController::class, 'import'])->name('excel.import');
-Route::get('/excel/export/{type}', [ExcelController::class, 'export'])->name('excel.export');
+Route::get('/excel/export', [ExcelController::class, 'export'])->name('excel.export');

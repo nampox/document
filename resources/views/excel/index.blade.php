@@ -51,8 +51,7 @@
     <div class="card mb-4">
         <div class="card-header">Xuất dữ liệu</div>
         <div class="card-body">
-            <a href="{{ route('excel.export', ['type' => 'csv']) }}" class="btn btn-success me-2">Export CSV</a>
-            <a href="{{ route('excel.export', ['type' => 'xlsx']) }}" class="btn btn-info">Export Excel</a>
+            <a href="{{ route('excel.export')}}" class="btn btn-success me-2">Export CSV</a>
         </div>
     </div>
 
