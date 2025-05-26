@@ -16,7 +16,6 @@ class QuestionImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         return new Question([
-            'id'=>$row['id'],
             'question'=>$row['question'],
             'answer'=>$row['answer'],
             'difficulty_level'=>$row['difficulty_level'],

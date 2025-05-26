@@ -15,6 +15,7 @@ class ExcelController extends Controller
 
         if($file){
             Excel::import(new QuestionImport, $file);
+            return 'done';
         }
     }
 }
